@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(21, 65, 21);
+    background-color: rgb(4, 4, 82);
 }
 .nav-bar {
     background-color: white;
@@ -204,7 +204,7 @@ margin-bottom: -22rem;
     margin-bottom: 2rem;
 }
 .contact {
-    margin-left: 22rem;
+    margin-left: 16rem;
 }
 /* .contact p {
     margin-left: 50rem;
@@ -217,7 +217,7 @@ margin-bottom: -22rem;
     cursor: pointer;
     /* margin-left: 60rem;
     margin-top: 2rem; */
-    margin-left: 9rem;
+    margin-left: 6rem;
     padding: 1rem 2rem;
     background-color: transparent;
     margin-bottom: 2rem;
@@ -308,8 +308,9 @@ a:hover {
         visibility: visible;
         transform: translate(0);
         position: fixed;
-        margin-top: -25rem;
-        width: 80%;
+        margin-top: -25.5rem;
+        width: 60%;
+        height: 100%;
         background-color: white;
     }
     .image p {
