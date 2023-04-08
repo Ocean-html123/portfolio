@@ -197,14 +197,14 @@ margin-bottom: -22rem;
 }
 .contact p {
     color: white;
-    margin-left: -40rem;
+    margin-left: -30rem;
     text-transform: none;
     margin-top: 1rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 .contact {
-    margin-left: 6rem;
+    margin-left: 22rem;
 }
 /* .contact p {
     margin-left: 50rem;
@@ -217,7 +217,7 @@ margin-bottom: -22rem;
     cursor: pointer;
     /* margin-left: 60rem;
     margin-top: 2rem; */
-    margin-left: 11rem;
+    margin-left: 9rem;
     padding: 1rem 2rem;
     background-color: transparent;
     margin-bottom: 2rem;
@@ -248,12 +248,6 @@ margin-bottom: -22rem;
 h1 {
     text-decoration: underline;
     text-decoration-color: aqua;
-    animation: show 2s ease-in-out infinite;
-}
-@keyframes show {
-    50% {
-        color: red;
-    }
 }
 a:hover {
     color: aqua;
@@ -306,11 +300,17 @@ a:hover {
         z-index: 1;
         position: absolu;
     }
+    .close {
+        margin-left: -1rem;
+        margin-top: -1rem;
+    }
     .show-bar {
         visibility: visible;
         transform: translate(0);
         position: fixed;
-        margin-top: -24.2rem;
+        margin-top: -25rem;
+        width: 80%;
+        background-color: white;
     }
     .image p {
         font-size: 20px;
@@ -370,7 +370,7 @@ a:hover {
     }
     .contact p {
         text-transform: none;
-        margin-left: -4rem;
+        margin-left: -1rem;
     }
     .contact button {
         cursor: pointer;
