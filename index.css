@@ -296,6 +296,19 @@ a:hover {
         margin-left: -1rem;
         margin-top: -1rem;
     }
+    .bar i {
+        margin-top: 2rem;
+        margin-left: -1rem;
+    }
+    .bar p {
+        margin-right: 6rem;
+        animation: rest 2s ease-in-out infinite;
+    }
+    @keyframes rest {
+        50% {
+            color: white;
+        }
+    }
     .show-bar {
         visibility: visible;
         transform: translate(0);
