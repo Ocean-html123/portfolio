@@ -293,15 +293,16 @@ a:hover {
         position: absolu;
     }
     .close {
-        margin-left: -1rem;
-        margin-top: -1rem;
+        margin-left: 15rem;
+        margin-top: 2rem;
     }
     .bar i {
-        margin-top: 2rem;
+        margin-top: rem;
         margin-left: -1rem;
     }
     .bar p {
         margin-right: 6rem;
+      margin-top: -2rem;
         animation: rest 2s ease-in-out infinite;
     }
     @keyframes rest {
