@@ -252,7 +252,7 @@ h1 {
 }
 @keyframes show {
     50% {
-        color: green;
+        color: red;
     }
 }
 a:hover {
