@@ -29,5 +29,7 @@ serve.addEventListener('click', function(){
 
 window.addEventListener('load', function(){
     const page = document.getElementById('loader');
+    const ocean = document.getElementById('ocean');
+    ocean.style.display = 'none';
     page.style.display = 'none';
 })
