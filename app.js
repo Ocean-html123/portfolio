@@ -26,3 +26,8 @@ cont.addEventListener('click', function(){
 serve.addEventListener('click', function(){
     bar.classList.remove('show-bar')
 })
+
+window.addEventListener('load', function(){
+    const page = document.getElementById('loader');
+    page.style.display = 'none';
+})
