@@ -5,22 +5,8 @@
     font-family: Arial,;
 }
 body {
-    background-image: linear-gradient(to right, #46b386, #1d6fa4);
+    background-image: linear-gradient(to right, #e5ff00, #a5a5a1, #0077ff);
     animation: gradient-animation 10s ease-in-out infinite;
-}
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-        background-image: linear-gradient(to right, #ffa600, #e2bd1bab, #0000ff);
-    }
-    50% {
-        background-position: 100% 50%;
-        background-image: linear-gradient(to right, #e5ff00, #a5a5a1, #0077ff);
-    }
-    100% {
-        background-position: 0% 50%;
-        background-image: linear-gradient(to right,  #ffa600, #1be21bab, #0000ff);
-    }
 }
 #loader {
   position: fixed;
@@ -321,12 +307,13 @@ a:hover {
     }
     .toggle {
         visibility: visible;
+        margin-left: -2rem;
     }
     .links {
         visibility: hidden;
     }
     .nav-bar {
-        padding: 0.01rem;
+        padding: 0.001rem;
         width: 100%;
     }
     .nav-bar p {
