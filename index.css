@@ -2,9 +2,25 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial,;
 }
 body {
-    background-color: rgb(4, 4, 82);
+    background-image: linear-gradient(to right, #46b386, #1d6fa4);
+    animation: gradient-animation 10s ease-in-out infinite;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+        background-image: linear-gradient(to right, #ffa600, #e2bd1bab, #0000ff);
+    }
+    50% {
+        background-position: 100% 50%;
+        background-image: linear-gradient(to right, #e5ff00, #a5a5a1, #0077ff);
+    }
+    100% {
+        background-position: 0% 50%;
+        background-image: linear-gradient(to right,  #ffa600, #1be21bab, #0000ff);
+    }
 }
 #loader {
   position: fixed;
@@ -12,18 +28,30 @@ body {
   left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-image: linear-gradient(to right, #e5ff00, #a5a5a1, #0077ff);
     z-index: 9999;
 }
 #loader p {
-    color: wheat;
-    margin-top: 15rem;
-    animation: turn 3s ease-in-out infinite;
+    color: #5c3c15;
+    margin-top: 20rem;
+    animation: turn 4s infinite;
 }
 @keyframes turn {
+    0% {
+       transform: scale(1);
+       color: rebeccapurple;
+    }
     50% {
+        transform: scale(2);
         color: red;
     }
+    100% {
+        transform: scale(1);
+        color: green;
+    }
+} 
+strong {
+    font: 1% sans-serif;
 }
 .nav-bar {
     background-color: white;
@@ -49,17 +77,19 @@ body {
 }
 a {
     margin-left: 3rem;
+   
 }
 ul {
+    margin-top: 1rem;
  margin-left: 3rem;
- color: black;
+ color: #654321;
  /* display: grid;
  grid-template-columns: 1fr 1fr 1fr; */
  list-style: none;
  display: flex;
 }
 a {
-    color: black;
+    color: #654321;
     text-decoration: none;
 }
 p {
@@ -110,11 +140,11 @@ footer i {
 }
 
 .image p {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 10rem;
   margin-left: 1rem;
   text-transform: none;
-  color: white;
+  color: #654321;
 }
 #button {
     background-color: transparent;
@@ -125,10 +155,10 @@ footer i {
     margin-left: 33rem;
    font-size: 20px;
    animation: shift 2s ease-in-out infinite;
-   margin-bottom: -5rem;
+   margin-bottom: rem;
 }
 #timid {
-    margin-top: 5rem;
+    margin-top: 0;
 }
 @keyframes shift {
     50% {
@@ -147,20 +177,22 @@ footer i {
     margin-left: -5rem;
 }
 h1 {
-    color: white;
+   color: #8B0000;
     margin-left: 6rem;
+    animation: title 5s linear infinite;
 }
 .middle p {
     text-transform: none;
-    color: white;
+    color: #654321;
     text-align: left;
     letter-spacing: 2px;
     margin-top: 4rem;
     margin-left: 5rem;
+    font-size: 1.5rem;
 }
 .middle {
     display: flex;
-    margin-top: -10rem;
+    margin-top: -14;
 }
 #span {
     color: blue;
@@ -194,9 +226,6 @@ form input {
     height: 15rem;
     margin-top: -1rem;
 }
-#timid {
-    margin-top: -10rem;
-}
 .maximum {
     display: grid;
     margin-top: -11rem;
@@ -209,13 +238,9 @@ form input {
 .service {
     margin-top: 5rem;
 }
-img {
-width: 20%;
-margin-left: 60rem;
-margin-bottom: -22rem;
-}
 .contact p {
-    color: white;
+    font-size: 1.5rem;
+    color: #654321;
     margin-left: 1rem;
     text-transform: none;
     margin-top: 3rem;
@@ -240,6 +265,9 @@ margin-bottom: -22rem;
         color: green;
     }
 }
+h2 {
+    margin-top: 0.6rem;
+}
 .cheese {
     margin-top: 2rem;
 }
@@ -263,7 +291,11 @@ h1 {
 a:hover {
     color: aqua;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: green;
+    text-decoration-style: double;
+}
+.image {
+    margin-bottom: -12rem;
 }
 .image p {
     text-align: start;
@@ -272,8 +304,11 @@ a:hover {
     margin-left: -1rem;
 }
 .timid {
+    border-radius: 30%;
+    margin-top: -30rem;
     margin-left: 3rem;
-    width: 20%;
+    width: 10%;
+    height: 15%;
     margin-bottom: 4rem;
 }
 @media screen and (max-width: 600px) {
@@ -282,7 +317,7 @@ a:hover {
     } */
     h1 {
         margin-left: 5rem;
-        margin-top: -22rem;
+        margin-top: -35rem;
     }
     .toggle {
         visibility: visible;
@@ -306,7 +341,7 @@ a:hover {
         width: 60%;
         height: 34.5rem;
         visibility: hidden;
-        margin-top: -24rem;
+        margin-top: rem;
         transform: translate(-100%);
         z-index: 1;
         position: absolu;
@@ -318,6 +353,9 @@ a:hover {
     .bar i {
         margin-top: rem;
         margin-left: -1rem;
+    }
+    .bar a {
+        color: #654321;
     }
     .bar p {
         margin-right: 6rem;
@@ -333,26 +371,29 @@ a:hover {
         visibility: visible;
         transform: translate(0);
         position: fixed;
-        margin-top: -28rem;
+        margin-top: -20rem;
         width: 60%;
         height: 100%;
         background-color: white;
     }
     .image p {
-        font-size: 20px;
+        font-size: 0q.5rem;
     }
     .middle {
         margin-top: 20rem;
         text-align: start;
         margin-left: -4rem;
         font-size: 13px;
-       
+    }
+    .image p {
+        font-size: 1.5rem;
     }
     .timid {
-       
-       margin-bottom: -13rem;
+       border-radius: 40%;
+       margin-bottom: -2rem;
        margin-left: 5rem;
         width: 20%;
+        height: 30%;
     }
     #button {
         margin-left: 0;
@@ -381,10 +422,17 @@ a:hover {
     #timid {
         margin-top: -8rem;
     }
+    #timid p {
+        font-size: 1rem;
+    }
     .service {
-        margin-top: 40rem;
+        font-size: 1rem;
+        margin-top: 50rem;
         margin-left: 0;
         margin-bottom: -17rem;
+    }
+    .service p {
+        font-size: 1rem;
     }
     .contact {
         color: white;
@@ -398,7 +446,7 @@ a:hover {
     .contact p {
         text-transform: none;
         margin-left: -1rem;
-        margin-top: -rem;
+    font-size: 1rem;
     }
     .contact button {
         cursor: pointer;
