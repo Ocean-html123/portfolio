@@ -307,7 +307,7 @@ a:hover {
     }
     .toggle {
         visibility: visible;
-        margin-left: -2rem;
+        margin-left: -4rem;
     }
     .links {
         visibility: hidden;
@@ -376,11 +376,12 @@ a:hover {
         font-size: 1.5rem;
     }
     .timid {
+
        border-radius: 10%;
-       margin-bottom: -2rem;
+       margin-bottom: -4rem;
        margin-left: 5rem;
-        width: 30%;
-        height: 50%;
+        width: 20%;
+        height: 30%;
     }
     #button {
         margin-left: 0;
@@ -408,6 +409,7 @@ a:hover {
     }
     #timid {
         margin-top: -8rem;
+        margin-bottom: 3rem;
     }
     #timid p {
         font-size: 1rem;
