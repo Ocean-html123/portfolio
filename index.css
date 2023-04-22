@@ -5,7 +5,7 @@
     font-family: Arial,;
 }
 body {
-    background-image: linear-gradient(to right, #e5ff00, #a5a5a1, #0077ff);
+    background-image: linear-gradient(to right, #e5ff00, #c7c7a6, #0077ff);
     animation: gradient-animation 10s ease-in-out infinite;
 }
 #loader {
