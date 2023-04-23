@@ -18,6 +18,7 @@ body {
     z-index: 9999;
 }
 #loader p {
+    margin-left: -4rem;
     color: #5c3c15;
     margin-top: 20rem;
     animation: turn 4s infinite;
@@ -292,7 +293,7 @@ a:hover {
 }
 .service img {
     width: 40%;
-    margin-top: 15rem;
+    margin-top: 25rem;
     margin-left: -3rem;
 }
 .service h1 {
@@ -304,6 +305,7 @@ a:hover {
     align-items: center;
     margin-bottom: 3rem;
     margin-top: -2rem;
+    padding: 0 2rem;
 }
 h4 {
     margin-left: -3rem;
@@ -313,6 +315,11 @@ h5 {
     margin-left: -3rem;
     margin-top: 1rem;
     color: #654321;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+.timid {
+    border-radius: 0%;
 }
 @media screen and (max-width: 600px) {
     #contact {
@@ -414,7 +421,7 @@ h5 {
         font-size: 1.5rem;
     }
     .timid {
-       border-radius: 10%;
+       /* border-radius: 10%; */
        margin-bottom: -13rem;
        margin-left: 5rem;
         width: 20%;
